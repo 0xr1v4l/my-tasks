@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="./src/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="app">
+      <header class="app__hero">
+        <article class="hero__article">
+          <h1 class="hero__title">To-Do List</h1>
+          <p class="hero__text">
+            Developed with ❤️ by
+            <a
+              href="http://github.com/0xr1v4l"
+              target="_blank"
+              class="hero__link"
+              >0xr1v4l</a
+            >
+          </p>
+        </article>
+        <img
+          src="https://cellphones.com.vn/sforum/wp-content/uploads/2024/02/anh-avatar-cute-53.jpg"
+          alt="Avatar profile"
+          class="hero__img"
+        />
+      </header>
+      <hr />
+      <ul class="app__container-tasks" id="container-tasks">
+        <span class="container-tasks__empty-message" id="empty-message">
+          No tasks here… for now 👀
+        </span>
+      </ul>
+      <form class="app__form" id="form">
+        <input
+          type="text"
+          placeholder="Enter task"
+          class="form__input"
+          id="input"
+        />
+        <button class="form__btn-add">
+          <i class="bx bx-plus"></i>
+        </button>
+      </form>
+    </main>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
